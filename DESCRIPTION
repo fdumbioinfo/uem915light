@@ -1,20 +1,23 @@
 Package: uem915light
-Title: Omic analysis tools
+Title: uem915light
 Version: 1.0.0
 Authors@R: 
-    person(given = "Florent",
-           family = "Dumont",
-           role = c("aut", "cre"),
-           email = "florent.dumont@universite-paris-saclay.fr")
-Description: Omic analysis tools.
+    person("Florent", "Dumont", , "florent.dumont@universite-paris-saclay.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4439-5070"))
+Description: Simple Package for test.
 License: GPL-3
 Depends: 
-    R (>= 4.0)
+    R (>= 4.3)
+Imports: 
+    ggplot2,
+    magrittr,
+    scales,
+    stats
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-Imports: 
-    ggplot2,
-    gplots,
-    graphics,
-    limma

@@ -18,7 +18,7 @@
 #' @import ggplot2
 #' @importFrom stats prcomp setNames
 #' @importFrom scales percent
-#' @noRd
+#' @export
 acp <- function(
   dat , factor = NULL , samplename = NULL,
   pc1 = 1 , pc2 = 2,
@@ -31,7 +31,6 @@ acp <- function(
   pca0$x %>% data.frame -> pca1
   pca1 %>% colnames
   prop <- pca0$sdev^2/sum(pca0$sdev^2)
-
   ### plot
   if( is.null( factor )  )
   {
